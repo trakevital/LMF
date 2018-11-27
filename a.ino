@@ -33,12 +33,11 @@ void loop() {
   
   myservo.write(90);
  
-  digitalWrite(48,LOW);
-  digitalWrite(49,LOW);
-  digitalWrite(50,LOW);
-  digitalWrite(51,LOW);
-  digitalWrite(52,LOW);
-  digitalWrite(53,LOW);
+  for(int i=53;i>47;i--)
+  {
+    digitalWrite(i,LOW);
+  }
+  
   
   for(int i=0;i<8;i++)
   {
